@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison Table</title>
+    <style>
+        /* Table styling */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            height: 50px;
+        }
+        
+        /* Column widths */
+        th:first-child, td:first-child {
+            width: 20%;
+            background-color: #e66; /* Style for the vertical header column */
+        }
+        
+        th:nth-child(2), td:nth-child(2) {
+            width: 30%;
+        }
+        
+        th:nth-child(3), td:nth-child(3) {
+            width: 10%;
+        }
+        
+        th:nth-child(4), td:nth-child(4), th:nth-child(5), td:nth-child(5) {
+            width: 20%;
+        }
+        
+        /* Header styling */
+        th {
+            background-color: #f2f;
+        }
+        
+        /* Zebra stripe rows */
+        tr:nth-child(even) {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Header Row -->
+        <tr>
+            <th rowspan="2">Product</th>
+            <th colspan="2">Details</th>
+            <th rowspan="2">Rating</th>
+            <th rowspan="2">Availability</th>
+        </tr>
+        <tr>
+            <th>Features</th>
+            <th>Price</th>
+        </tr>
+        
+        <!-- Product Rows -->
+        <tr>
+            <td rowspan="2">Product 1</td>
+            <td>Feature 1, Feature 2</td>
+            <td>$99.99</td>
+            <td>4.5/5</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>Feature 3, Feature 4</td>
+            <td>$89.99</td>
+            <td>4.3/5</td>
+            <td>In Stock</td>
+        </tr>
+        
+        <tr>
+            <td>Product 2</td>
+            <td>Feature 1, Feature 5</td>
+            <td>$119.99</td>
+            <td>4.7/5</td>
+            <td>Pre-Order</td>
+        </tr>
+        
+        <tr>
+            <td>Product 3</td>
+            <td>Feature 2, Feature 6</td>
+            <td>$139.99</td>
+            <td>4.9/5</td>
+            <td>Out of Stock</td>
+        </tr>
+    </table>
+
+</body>
+</html>
